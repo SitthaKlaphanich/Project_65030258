@@ -12,9 +12,10 @@ namespace TestProject
         [TestMethod]
         public void TestProjectMemberIds()
         {
-            Assert.IsTrue((int)Project.Members.Joe == 1);
-            Assert.IsTrue((int)Project.Members.Jane == 2);
-            Assert.IsTrue((int)Project.Members.Mark == 3);
+            Assert.IsTrue((int)Project.Members.Arm == 1);
+            Assert.IsTrue((int)Project.Members.Tiew == 2);
+            Assert.IsTrue((int)Project.Members.Ping == 3);
+            Assert.IsTrue((int)Project.Members.Fulk == 4);
         }
     }
 }
