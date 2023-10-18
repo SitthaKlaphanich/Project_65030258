@@ -13,6 +13,7 @@ namespace Project_65030258
             Arm = 1,
             Tiew = 2,
             Ping = 3,
+            Fulk = 4,
         }
     }
 }
