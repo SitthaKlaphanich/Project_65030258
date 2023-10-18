@@ -64,9 +64,9 @@ jobs:
       - name: Run MSBuild
         id: run_msbuild
         run: |
-          msbuild .\Project_65030258\Project_65030258.sln  /t:clean /p:Configuration=Debug
-          nuget restore .\Project_65030258\Project_65030258.sln
-          msbuild .\Project_65030258\Project_65030258.sln  /t:build /p:Configuration=Debug
+          msbuild .\Project_65030258.sln  /t:clean /p:Configuration=Debug
+          nuget restore .\Project_65030258.sln
+          msbuild .\Project_65030258.sln  /t:build /p:Configuration=Debug
      
       - name: Setup VSTest and add to PATH
         uses: darenm/Setup-VSTest@v1
@@ -74,5 +74,5 @@ jobs:
 
       - name: Test Project Members
         id: run_vstest
-        working-directory: .\TestProject\\bin\Debug\net6.0
+        working-directory: .\TestProject\bin\Debug\net6.0
         run: vstest.console.exe TestProject.dll /Tests:TestProjectMembersCount
